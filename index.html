@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKFILMS3 - Premium Film Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" 
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <div class="grid-overlay"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <h1 class="logo">MKFILMS3</h1>
+                <div class="logo-underline"></div>
+            </div>
+            <p class="tagline">Premium Cinema Experience • Exclusive Collection</p>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Films</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4K</span>
+                    <span class="stat-label">Quality</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Entertainment</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="film-grid">
+            <!-- 1. В потерянных землях -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/8646-v-poterjannyh-zemljah.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster lostlands">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🏞️</div>
+                </div>
+                <div class="film-info">
+                    <h3>В потерянных землях</h3>
+                    <p class="genre">Adventure • Drama</p>
+                    <p class="description">
+                        Eine Gruppe von Forschern gerät in eine unbekannte, gefährliche Region voller Mysterien, 
+                        in der die Grenzen zwischen Realität und Legende verschwimmen.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">7.5</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. Прах / Пепел -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/9097-prah-pepel.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster ash">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">💨</div>
+                </div>
+                <div class="film-info">
+                    <h3>Прах / Пепел</h3>
+                    <p class="genre">Sci-Fi • Thriller</p>
+                    <p class="description">
+                        In einer postapokalyptischen Welt kämpfen Überlebende gegen die drohende Ascheflut
+                        und dunkle Geheimnisse einer untergegangenen Zivilisation.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="score">6.8</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Форест Роуд, 825 -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/9439-forest-roud-825.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster forestroad">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🌲🚗</div>
+                </div>
+                <div class="film-info">
+                    <h3>Форест Роуд, 825</h3>
+                    <p class="genre">Mystery • Thriller</p>
+                    <p class="description">
+                        Eine Routinetour auf der Landstraße Nummer 825 entpuppt sich als Albtraum, 
+                        als unheimliche Erscheinungen und verschlungene Pfade die Passagiere jagen.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">7.3</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4. Игра в оборотня -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/9021-igra-v-oborotnja.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster werewolf">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🐺</div>
+                </div>
+                <div class="film-info">
+                    <h3>Игра в оборотня</h3>
+                    <p class="genre">Horror • Fantasy</p>
+                    <p class="description">
+                        In einer abgeschiedenen Kleinstadt beginnt ein mörderisches Jason-Der-Wolf-Ritual, 
+                        als einer der Bewohner zum Werwolf wird und alle Jagdgesellschaften entfesselt.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="score">6.9</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 5. Маленькая Сибирь -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogo-films.fm/9310-malenkaja-sibir.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster siberia">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">❄️🐻</div>
+                </div>
+                <div class="film-info">
+                    <h3>Маленькая Сибирь</h3>
+                    <p class="genre">Drama • Romance</p>
+                    <p class="description">
+                        Eine Liebesgeschichte im Herzen Sibiriens, in der ein einfacher Holzfäller und 
+                        eine reisende Künstlerin gegen Eis, Einsamkeit und Vorurteile kämpfen.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">7.6</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 6. Дерзкий -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogotv.biz/91199-derzkij.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster derzkij">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">💪</div>
+                </div>
+                <div class="film-info">
+                    <h3>Дерзкий</h3>
+                    <p class="genre">Action • Crime</p>
+                    <p class="description">
+                        Ein skrupelloser Undercover-Agent infiltriert die gefährlichste Gang der Stadt 
+                        und riskiert alles, um die korrupten Strippenzieher zu Fall zu bringen.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">7.1</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 7. Группа крови -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogotv.biz/86367-gruppa-krovi.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster bloodtype">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🩸</div>
+                </div>
+                <div class="film-info">
+                    <h3>Группа крови</h3>
+                    <p class="genre">Drama • Historical</p>
+                    <p class="description">
+                        Eine dramatische Erzählung über die Blutschnellspende-Bewegung während eines 
+                        historischen Konflikts, die Schicksale von Spendern und Empfängern untrennbar verbindet.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">7.4</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 8. Кракен -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogotv.biz/85897-kraken.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster kraken">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🐙</div>
+                </div>
+                <div class="film-info">
+                    <h3>Кракен</h3>
+                    <p class="genre">Horror • Sci-Fi</p>
+                    <p class="description">
+                        Ein geheimer Meeresboden-Forschungstörn erweckt das legendäre Monster „Kraken“, 
+                        das fortan die Besatzung jagt und die Grenzen der Vernunft sprengt.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="score">6.7</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 9. Утроба -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogotv.biz/85879-utroba.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster utroba">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">🧠</div>
+                </div>
+                <div class="film-info">
+                    <h3>Утроба</h3>
+                    <p class="genre">Horror • Mystery</p>
+                    <p class="description">
+                        In einem abgelegenen Krankenhaus entdeckt eine Ärztin einen mysteriösen Organhandel-Ring, 
+                        der Patienten im Tiefschlaf für experimentelle Zwecke missbraucht.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="score">6.5</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 10. Последнее завтра -->
+            <div 
+                class="film-card premium" 
+                onclick="openFilm('https://kinogotv.biz/91025-poslednee-zavtra.html')"
+            >
+                <div class="card-glow"></div>
+                <div class="quality-badge">PREMIUM 4K</div>
+                <div class="film-poster tomorrow">
+                    <div class="poster-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="poster-bg">⏳</div>
+                </div>
+                <div class="film-info">
+                    <h3>Последнее завтра</h3>
+                    <p class="genre">Drama • Sci-Fi</p>
+                    <p class="description">
+                        In naher Zukunft entdeckt ein Wissenschaftler eine Möglichkeit, die Zeit zu stoppen, 
+                        und muss sich entscheiden, ob er die Menschheit rettet oder in den eigenen Wahnsinn stürzt.
+                    </p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="score">7.2</span>
+                    </div>
+                    <button class="watch-btn">
+                        Watch Now <i class="btn-icon fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <p>© 2025 MKFILMS3 • Premium Cinema Collection</p>
+                <div class="social-links">
+                    <span class="social-icon">📱</span>
+                    <span class="social-icon">🎬</span>
+                    <span class="social-icon">⭐</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
